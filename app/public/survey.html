@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Friend Finder</title>
+    <style type="text/css">
+    
+    #title {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    #nba {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #submitButton {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .inputs {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="title">Answer These Questions to Find Your Player Match</h1>
+                <img src="nba.png" id="nba" width="300" height="125" align="middle">
+                <hr>
+                <div id="info">
+                    <div class="input-group">
+                        <h3>Name: (Required)</h3>
+                        <input id="nameInput" type="text" class="form-control inputs" placeholder="User's Name" aria-describedby="basic-addon2">
+                    </div>
+                    <div class="input-group">
+                        <h3>Link to Photo Image: (Required)</h3>
+                        <input id="photoInput" type="text" class="form-control inputs" placeholder="Your Image" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div id="surveyQuestions">
+                    <h2>Question I</h2>
+                    <p>You would rather spend time alone than with friends.</p>
+                    <select name="dropdown" size=1 id="q1">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question II</h2>
+                    <p>The clothing that you wear is a part of your personality.</p>
+                    <select name="dropdown" size=1 id="q2">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question III</h2>
+                    <p>Dunking is a harder skill to master than shooting jump shots.</p>
+                    <select name="dropdown" size=1 id="q3">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question IV</h2>
+                    <p>The earth is flat.</p>
+                    <select name="dropdown" size=1 id="q4">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question V</h2>
+                    <p>Tweezing your eyebrows is for the birds.</p>
+                    <select name="dropdown" size=1 id="q5">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question VI</h2>
+                    <p>You're one to take the blame when things don't go the way you planned.</p>
+                    <select name="dropdown" size=1 id="q6">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question VII</h2>
+                    <p>You respond well to authority.</p>
+                    <select name="dropdown" size=1 id="q7">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question VIII</h2>
+                    <p>You care what other people think about you.</p>
+                    <select name="dropdown" size=1 id="q8">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question IX</h2>
+                    <p>You would eat your weight in ice cream if there were no consequences.</p>
+                    <select name="dropdown" size=1 id="q9">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <h2>Question X</h2>
+                    <p>You respect the opinions of others.</p>
+                    <select name="dropdown" size=1 id="q10">
+                        <option value="0">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>​
+                    <br>
+                    <div id="submitButton">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" id="submit" data-toggle="modal" data-target="myModal" class="btn btn-primary btn-lg"><i class="fa fa-check-circle"></i>Submit</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="links"><a href="/api/friends">API Friends List</a> |
+                            <a href="https://github.com/EGartland/FriendFinder">GitHub Repo</a></p>
+                    </div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 id="matchName"></h2>
+                                    <img id="matchImg" src="" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$("#submitButton").on("click", function(e) {
+    e.preventDefault();
+    function validate() {
+        var isValid = true;
+        $(".form-control").each(function() {
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+        })
+        console.log("1");
+        return isValid;
+    }
+    if (validate() === true) {
+        var data = {};
+        data.name = $("#nameInput").val().trim();
+        data.photo = $("#photoInput").val().trim();
+        data.scores = [$("#q1").val().trim(), $("#q2").val().trim(), $("#q3").val().trim(), $("#q4").val().trim(), $("#q5").val().trim(), $("#q6").val().trim(), $("#q7").val().trim(), $("#q8").val().trim(), $("#q9").val().trim(), $("#q10").val().trim()];
+        console.log(data);
+        var currentURL = window.location.origin;
+        $.post(currentURL + "/api/friends", data, function(data) {
+            $("#matchName").html(data.name);
+            $("#matchImg").attr("src", data.photo);
+            console.log("2");
+            $("#myModal").modal("toggle");
+        });
+    } else {
+        alert("Please fill out all of the fields before submitting!!")
+    }
+    return false;
+});
+$.get("/api/friends", function(data) {
+    $("#matchName").html(data.name);
+    $("#matchImg").attr("src", data.photo);
+    console.log("2");
+    $("#resultsModal").modal("toggle");
+})
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "hey-oh!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EGartland/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EGartland/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/EGartland/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "require": "^2.4.20"
+  }
+}
