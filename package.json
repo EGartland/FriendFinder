@@ -11,16 +11,5 @@
   },
   "scripts": {
     "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EGartland/FriendFinder.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EGartland/FriendFinder/issues"
-  },
-  "homepage": "https://github.com/EGartland/FriendFinder#readme"
-  
+  }
 }
