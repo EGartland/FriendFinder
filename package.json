@@ -9,6 +9,9 @@
     "path": "^0.12.7",
     "require": "^2.4.20"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EGartland/FriendFinder.git"
