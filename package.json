@@ -1,10 +1,13 @@
 {
   "name": "friendfinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "NBA Friend Finder",
   "main": "server.js",
-  "scripts": {
-    "test": "hey-oh!"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "require": "^2.4.20"
   },
   "repository": {
     "type": "git",
@@ -15,11 +18,6 @@
   "bugs": {
     "url": "https://github.com/EGartland/FriendFinder/issues"
   },
-  "homepage": "https://github.com/EGartland/FriendFinder#readme",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "path": "^0.12.7",
-    "require": "^2.4.20"
-  }
+  "homepage": "https://github.com/EGartland/FriendFinder#readme"
+  
 }
