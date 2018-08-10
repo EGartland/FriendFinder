@@ -5,15 +5,16 @@ var path = require("path");
 var app = express();
 var userData = require("../data/friends.js");
 
+const routes = express.Router()
+
 // Routes
 // ===========================================================
-module.exports = function(app) {
-    app.get("/api/friends", function(req, res) {
+    routes.get("/friends", function(req, res) {
         return res.json(userData);
     });
 
 
-    app.post("/api/friends", function(req, res) {
+    routes.post("/friends", function(req, res) {
         var newuser = req.body;
 
         var closestDifference = 100;
@@ -38,4 +39,4 @@ module.exports = function(app) {
         userData.push(newuser)
     })
 
-};
+    module.exports = routes
