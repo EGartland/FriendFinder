@@ -1,0 +1,17 @@
+{
+"name": "Friend Finder",
+"description": "This app does one little thing, and does it well.",
+"keywords": [
+  "survey",
+  "nba",
+  "friends"
+],
+"website": "",
+"repository": "https://github.com/EGartland/friendFinderNBA",
+"logo": "http://www.stickpng.com/assets/images/58428defa6515b1e0ad75ab4.png",
+"success_url": "/welcome",
+"scripts": {
+  "postdeploy": "bundle exec rake bootstrap"
+}
+
+}
