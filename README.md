@@ -8,13 +8,13 @@ The functionality of this application is fairly straightforward. It opens up to 
 
 #### Home Screenshot
 
-![Screenshot](https://github.com/EGartland/bamazon/blob/master/app/public/FriendFinder.png)
+![Screenshot](https://github.com/EGartland/FriendFinder/blob/master/app/public/FriendFinder.png)
 
 
 #### Survey Part I (Answering Questions I - V)
 
-![Output sample](https://github.com/EGartland/bamazon/blob/master/app/public/surveyOne.gif)
+![Output sample](https://github.com/EGartland/FriendFinder/blob/master/app/public/surveyOne.gif)
 
 #### Survey GIF II (Answering Questions VI - X/Modal Response Display)
 
-![Output sample](https://github.com/EGartland/bamazon/blob/master/app/public/surveyTwo.gif)
+![Output sample](https://github.com/EGartland/FriendFinder/blob/master/app/public/surveyTwo.gif)
